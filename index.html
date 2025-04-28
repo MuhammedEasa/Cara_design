@@ -1,1241 +1,1855 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cara Markets Brand Guide</title>
-    <link rel="shortcut icon" href="./Browser.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Browser.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* Original Theme (Gold/Navy) */
-        :root {
-            --primary-gold: #d4b964;
-            --dark-gold: #b39646;
-            --light-gold: #f0e0a2;
-            --navy: #0a1e3c;
-            --light-navy: #1a3a64;
-            --off-white: #f9f9fb;
-            --light-gray: #e8e8e8;
-            --medium-gray: #9da3ae;
-            --dark-gray: #4a4a4a;
-            
-            /* Button colors */
-            --button-primary-bg: var(--primary-gold);
-            --button-primary-text: var(--navy);
-            --button-primary-hover-bg: var(--dark-gold);
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: var(--navy);
-            --button-secondary-border: var(--navy);
-            --button-secondary-hover-bg: var(--navy);
-            --button-secondary-hover-text: white;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, var(--navy) 0%, var(--light-navy) 100%);
-            --feature-card-title: var(--primary-gold);
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: var(--navy);
-            --footer-text: white;
-        }
-        
-        /* Purple Theme */
-        .purple-theme {
-            --primary-gold: #9d4edd;
-            --dark-gold: #7b2cbf;
-            --light-gold: #c77dff;
-            --navy: #240046;
-            --light-navy: #3c096c;
-            --off-white: #fbf8ff;
-            --light-gray: #e8e8f0;
-            --medium-gray: #9d9db4;
-            --dark-gray: #3a3a4a;
-            
-            /* Button colors */
-            --button-primary-bg: #9d4edd;
-            --button-primary-text: white;
-            --button-primary-hover-bg: #7b2cbf;
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: #9d4edd;
-            --button-secondary-border: #9d4edd;
-            --button-secondary-hover-bg: #9d4edd;
-            --button-secondary-hover-text: white;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, #240046 0%, #3c096c 100%);
-            --feature-card-title: #c77dff;
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: #240046;
-            --footer-text: white;
-        }
-        
-        /* Teal Theme */
-        .teal-theme {
-            --primary-gold: #2cb1bc;
-            --dark-gold: #0e7c86;
-            --light-gold: #5eced6;
-            --navy: #014d4e;
-            --light-navy: #0a6c6e;
-            --off-white: #f0f9fa;
-            --light-gray: #e0f2f1;
-            --medium-gray: #89b8b9;
-            --dark-gray: #293e40;
-            
-            /* Button colors */
-            --button-primary-bg: #2cb1bc;
-            --button-primary-text: white;
-            --button-primary-hover-bg: #0e7c86;
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: #2cb1bc;
-            --button-secondary-border: #2cb1bc;
-            --button-secondary-hover-bg: #2cb1bc;
-            --button-secondary-hover-text: white;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, #014d4e 0%, #0a6c6e 100%);
-            --feature-card-title: #5eced6;
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: #014d4e;
-            --footer-text: white;
-        }
-        
-        /* Crimson Theme */
-        .crimson-theme {
-            --primary-gold: #e63946;
-            --dark-gold: #c1121f;
-            --light-gold: #ff6b6b;
-            --navy: #1d3557;
-            --light-navy: #2a4865;
-            --off-white: #f8f9fa;
-            --light-gray: #edf2f4;
-            --medium-gray: #a8a9ad;
-            --dark-gray: #343a40;
-            
-            /* Button colors */
-            --button-primary-bg: #e63946;
-            --button-primary-text: white;
-            --button-primary-hover-bg: #c1121f;
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: #e63946;
-            --button-secondary-border: #e63946;
-            --button-secondary-hover-bg: #e63946;
-            --button-secondary-hover-text: white;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, #1d3557 0%, #2a4865 100%);
-            --feature-card-title: #ff6b6b;
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: #1d3557;
-            --footer-text: white;
-        }
-        
-        /* Emerald Theme */
-        .emerald-theme {
-            --primary-gold: #2dd4bf;
-            --dark-gold: #14b8a6;
-            --light-gold: #5eead4;
-            --navy: #064e3b;
-            --light-navy: #0f766e;
-            --off-white: #f0fdfa;
-            --light-gray: #d1fae5;
-            --medium-gray: #94a3b8;
-            --dark-gray: #334155;
-            
-            /* Button colors */
-            --button-primary-bg: #2dd4bf;
-            --button-primary-text: #064e3b;
-            --button-primary-hover-bg: #14b8a6;
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: #2dd4bf;
-            --button-secondary-border: #2dd4bf;
-            --button-secondary-hover-bg: #2dd4bf;
-            --button-secondary-hover-text: #064e3b;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, #064e3b 0%, #0f766e 100%);
-            --feature-card-title: #5eead4;
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: #064e3b;
-            --footer-text: white;
-        }
-        
-        /* Amber Theme */
-        .amber-theme {
-            --primary-gold: #f59e0b;
-            --dark-gold: #d97706;
-            --light-gold: #fbbf24;
-            --navy: #422006;
-            --light-navy: #713f12;
-            --off-white: #fffbeb;
-            --light-gray: #fef3c7;
-            --medium-gray: #9ca3af;
-            --dark-gray: #44403c;
-            
-            /* Button colors */
-            --button-primary-bg: #f59e0b;
-            --button-primary-text: #422006;
-            --button-primary-hover-bg: #d97706;
-            --button-primary-hover-text: white;
-            --button-secondary-bg: transparent;
-            --button-secondary-text: #f59e0b;
-            --button-secondary-border: #f59e0b;
-            --button-secondary-hover-bg: #f59e0b;
-            --button-secondary-hover-text: #422006;
-            
-            /* Feature card */
-            --feature-card-bg: linear-gradient(145deg, #422006 0%, #713f12 100%);
-            --feature-card-title: #fbbf24;
-            --feature-card-text: white;
-            
-            /* Footer */
-            --footer-bg: #422006;
-            --footer-text: white;
-        }
-        /* Sapphire Theme */
-.sapphire-theme {
-    --primary-gold: #3a86ff;
-    --dark-gold: #0055d4;
-    --light-gold: #6ea8ff;
-    --navy: #1d3557;
-    --light-navy: #2c4f7c;
-    --off-white: #f0f6ff;
-    --light-gray: #e2e8f0;
-    --medium-gray: #8d99ae;
-    --dark-gray: #343a40;
-    
-    /* Button colors */
-    --button-primary-bg: #3a86ff;
-    --button-primary-text: white;
-    --button-primary-hover-bg: #0055d4;
-    --button-primary-hover-text: white;
-    --button-secondary-bg: transparent;
-    --button-secondary-text: #3a86ff;
-    --button-secondary-border: #3a86ff;
-    --button-secondary-hover-bg: #3a86ff;
-    --button-secondary-hover-text: white;
-    
-    /* Feature card */
-    --feature-card-bg: linear-gradient(145deg, #1d3557 0%, #2c4f7c 100%);
-    --feature-card-title: #6ea8ff;
-    --feature-card-text: white;
-    
-    /* Footer */
-    --footer-bg: #1d3557;
-    --footer-text: white;
-}
+      /* Original Theme (Gold/Navy) */
+      :root {
+        --primary-gold: #d4b964;
+        --dark-gold: #b39646;
+        --light-gold: #f0e0a2;
+        --navy: #0a1e3c;
+        --light-navy: #1a3a64;
+        --off-white: #f9f9fb;
+        --light-gray: #e8e8e8;
+        --medium-gray: #9da3ae;
+        --dark-gray: #4a4a4a;
 
-/* Rose Theme */
-.rose-theme {
-    --primary-gold: #ff5c8d;
-    --dark-gold: #d90429;
-    --light-gold: #ffafcc;
-    --navy: #4a0e29;
-    --light-navy: #610f33;
-    --off-white: #fff0f5;
-    --light-gray: #fbe3eb;
-    --medium-gray: #b18c99;
-    --dark-gray: #4a3842;
-    
-    /* Button colors */
-    --button-primary-bg: #ff5c8d;
-    --button-primary-text: white;
-    --button-primary-hover-bg: #d90429;
-    --button-primary-hover-text: white;
-    --button-secondary-bg: transparent;
-    --button-secondary-text: #ff5c8d;
-    --button-secondary-border: #ff5c8d;
-    --button-secondary-hover-bg: #ff5c8d;
-    --button-secondary-hover-text: white;
-    
-    /* Feature card */
-    --feature-card-bg: linear-gradient(145deg, #4a0e29 0%, #610f33 100%);
-    --feature-card-title: #ffafcc;
-    --feature-card-text: white;
-    
-    /* Footer */
-    --footer-bg: #4a0e29;
-    --footer-text: white;
-}
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--off-white);
-            color: var(--dark-gray);
-            line-height: 1.6;
-            transition: all 0.3s ease;
-        }
-        
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 1.5rem 0;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            height: 45px;      
-            width: auto;
-            object-fit: contain; 
-            padding: 5px;        
-            display: block;
-        }
-        
-        .theme-selector {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .theme-selector-label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .theme-select {
-            padding: 8px 12px;
-            border-radius: 4px;
-            border: 1px solid var(--light-gray);
-            background-color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.9rem;
-            cursor: pointer;
-        }
-        
-        .theme-select:focus {
-            outline: none;
-            border-color: var(--primary-gold);
-        }
-        
-        .hero {
-            padding-top: 120px;
-            padding-bottom: 3rem;
-            background: linear-gradient(170deg, white 0%, var(--off-white) 100%);
-            transition: all 0.3s ease;
-        }
-        
+        /* Button colors */
+        --button-primary-bg: var(--primary-gold);
+        --button-primary-text: var(--navy);
+        --button-primary-hover-bg: var(--dark-gold);
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: var(--navy);
+        --button-secondary-border: var(--navy);
+        --button-secondary-hover-bg: var(--navy);
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(
+          145deg,
+          var(--navy) 0%,
+          var(--light-navy) 100%
+        );
+        --feature-card-title: var(--primary-gold);
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: var(--navy);
+        --footer-text: white;
+      }
+
+      /* Purple Theme */
+      .purple-theme {
+        --primary-gold: #9d4edd;
+        --dark-gold: #7b2cbf;
+        --light-gold: #c77dff;
+        --navy: #240046;
+        --light-navy: #3c096c;
+        --off-white: #fbf8ff;
+        --light-gray: #e8e8f0;
+        --medium-gray: #9d9db4;
+        --dark-gray: #3a3a4a;
+
+        /* Button colors */
+        --button-primary-bg: #9d4edd;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #7b2cbf;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #9d4edd;
+        --button-secondary-border: #9d4edd;
+        --button-secondary-hover-bg: #9d4edd;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #240046 0%, #3c096c 100%);
+        --feature-card-title: #c77dff;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #240046;
+        --footer-text: white;
+      }
+
+      /* Teal Theme */
+      .teal-theme {
+        --primary-gold: #2cb1bc;
+        --dark-gold: #0e7c86;
+        --light-gold: #5eced6;
+        --navy: #014d4e;
+        --light-navy: #0a6c6e;
+        --off-white: #f0f9fa;
+        --light-gray: #e0f2f1;
+        --medium-gray: #89b8b9;
+        --dark-gray: #293e40;
+
+        /* Button colors */
+        --button-primary-bg: #2cb1bc;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #0e7c86;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #2cb1bc;
+        --button-secondary-border: #2cb1bc;
+        --button-secondary-hover-bg: #2cb1bc;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #014d4e 0%, #0a6c6e 100%);
+        --feature-card-title: #5eced6;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #014d4e;
+        --footer-text: white;
+      }
+
+      /* Crimson Theme */
+      .crimson-theme {
+        --primary-gold: #e63946;
+        --dark-gold: #c1121f;
+        --light-gold: #ff6b6b;
+        --navy: #1d3557;
+        --light-navy: #2a4865;
+        --off-white: #f8f9fa;
+        --light-gray: #edf2f4;
+        --medium-gray: #a8a9ad;
+        --dark-gray: #343a40;
+
+        /* Button colors */
+        --button-primary-bg: #e63946;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #c1121f;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #e63946;
+        --button-secondary-border: #e63946;
+        --button-secondary-hover-bg: #e63946;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #1d3557 0%, #2a4865 100%);
+        --feature-card-title: #ff6b6b;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #1d3557;
+        --footer-text: white;
+      }
+
+      /* Emerald Theme */
+      .emerald-theme {
+        --primary-gold: #2dd4bf;
+        --dark-gold: #14b8a6;
+        --light-gold: #5eead4;
+        --navy: #064e3b;
+        --light-navy: #0f766e;
+        --off-white: #f0fdfa;
+        --light-gray: #d1fae5;
+        --medium-gray: #94a3b8;
+        --dark-gray: #334155;
+
+        /* Button colors */
+        --button-primary-bg: #2dd4bf;
+        --button-primary-text: #064e3b;
+        --button-primary-hover-bg: #14b8a6;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #2dd4bf;
+        --button-secondary-border: #2dd4bf;
+        --button-secondary-hover-bg: #2dd4bf;
+        --button-secondary-hover-text: #064e3b;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #064e3b 0%, #0f766e 100%);
+        --feature-card-title: #5eead4;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #064e3b;
+        --footer-text: white;
+      }
+
+      /* Amber Theme */
+      .amber-theme {
+        --primary-gold: #f59e0b;
+        --dark-gold: #d97706;
+        --light-gold: #fbbf24;
+        --navy: #422006;
+        --light-navy: #713f12;
+        --off-white: #fffbeb;
+        --light-gray: #fef3c7;
+        --medium-gray: #9ca3af;
+        --dark-gray: #44403c;
+
+        /* Button colors */
+        --button-primary-bg: #f59e0b;
+        --button-primary-text: #422006;
+        --button-primary-hover-bg: #d97706;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #f59e0b;
+        --button-secondary-border: #f59e0b;
+        --button-secondary-hover-bg: #f59e0b;
+        --button-secondary-hover-text: #422006;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #422006 0%, #713f12 100%);
+        --feature-card-title: #fbbf24;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #422006;
+        --footer-text: white;
+      }
+      /* Sapphire Theme */
+      .sapphire-theme {
+        --primary-gold: #3a86ff;
+        --dark-gold: #0055d4;
+        --light-gold: #6ea8ff;
+        --navy: #1d3557;
+        --light-navy: #2c4f7c;
+        --off-white: #f0f6ff;
+        --light-gray: #e2e8f0;
+        --medium-gray: #8d99ae;
+        --dark-gray: #343a40;
+
+        /* Button colors */
+        --button-primary-bg: #3a86ff;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #0055d4;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #3a86ff;
+        --button-secondary-border: #3a86ff;
+        --button-secondary-hover-bg: #3a86ff;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #1d3557 0%, #2c4f7c 100%);
+        --feature-card-title: #6ea8ff;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #1d3557;
+        --footer-text: white;
+      }
+
+      /* Rose Theme */
+      .rose-theme {
+        --primary-gold: #ff5c8d;
+        --dark-gold: #d90429;
+        --light-gold: #ffafcc;
+        --navy: #4a0e29;
+        --light-navy: #610f33;
+        --off-white: #fff0f5;
+        --light-gray: #fbe3eb;
+        --medium-gray: #b18c99;
+        --dark-gray: #4a3842;
+
+        /* Button colors */
+        --button-primary-bg: #ff5c8d;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #d90429;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #ff5c8d;
+        --button-secondary-border: #ff5c8d;
+        --button-secondary-hover-bg: #ff5c8d;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #4a0e29 0%, #610f33 100%);
+        --feature-card-title: #ffafcc;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #4a0e29;
+        --footer-text: white;
+      }
+      /* Pearl & Gold Theme */
+      .pearl-theme {
+        --primary-gold: #d4af37;
+        --dark-gold: #b8860b;
+        --light-gold: #f1d78c;
+        --navy: #5c5c5c;
+        --light-navy: #7e7e7e;
+        --off-white: #fefdfb;
+        --light-gray: #f7f7f7;
+        --medium-gray: #b0b0b0;
+        --dark-gray: #4a4a4a;
+
+        /* Button colors */
+        --button-primary-bg: #d4af37;
+        --button-primary-text: white;
+        --button-primary-hover-bg: #b8860b;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #d4af37;
+        --button-secondary-border: #d4af37;
+        --button-secondary-hover-bg: #d4af37;
+        --button-secondary-hover-text: white;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #5c5c5c 0%, #7e7e7e 100%);
+        --feature-card-title: #f1d78c;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #5c5c5c;
+        --footer-text: white;
+      }
+
+      /* Silver Luxury Theme */
+      .silver-theme {
+        --primary-gold: #c0c0c0;
+        --dark-gold: #a9a9a9;
+        --light-gold: #e5e5e5;
+        --navy: #2e4053;
+        --light-navy: #34495e;
+        --off-white: #fafafa;
+        --light-gray: #f2f2f2;
+        --medium-gray: #adadad;
+        --dark-gray: #4d4d4d;
+
+        /* Button colors */
+        --button-primary-bg: #c0c0c0;
+        --button-primary-text: #2e4053;
+        --button-primary-hover-bg: #a9a9a9;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #c0c0c0;
+        --button-secondary-border: #c0c0c0;
+        --button-secondary-hover-bg: #c0c0c0;
+        --button-secondary-hover-text: #2e4053;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #2e4053 0%, #34495e 100%);
+        --feature-card-title: #e5e5e5;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #2e4053;
+        --footer-text: white;
+      }
+
+      /* Champagne Theme */
+      .champagne-theme {
+        --primary-gold: #f1c27d;
+        --dark-gold: #dda15e;
+        --light-gold: #faecd8;
+        --navy: #606c38;
+        --light-navy: #7d8a61;
+        --off-white: #fefdf9;
+        --light-gray: #f5f3e6;
+        --medium-gray: #bcb8a8;
+        --dark-gray: #555555;
+
+        /* Button colors */
+        --button-primary-bg: #f1c27d;
+        --button-primary-text: #606c38;
+        --button-primary-hover-bg: #dda15e;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #f1c27d;
+        --button-secondary-border: #f1c27d;
+        --button-secondary-hover-bg: #f1c27d;
+        --button-secondary-hover-text: #606c38;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #606c38 0%, #7d8a61 100%);
+        --feature-card-title: #faecd8;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #606c38;
+        --footer-text: white;
+      }
+
+      /* Rose Gold Theme */
+      .rosegold-theme {
+        --primary-gold: #e0bfb8;
+        --dark-gold: #c8a99e;
+        --light-gold: #f7e1dc;
+        --navy: #6d4c41;
+        --light-navy: #8d6e63;
+        --off-white: #fdf9f8;
+        --light-gray: #f5ebe9;
+        --medium-gray: #c9b2ad;
+        --dark-gray: #5d4037;
+
+        /* Button colors */
+        --button-primary-bg: #e0bfb8;
+        --button-primary-text: #6d4c41;
+        --button-primary-hover-bg: #c8a99e;
+        --button-primary-hover-text: white;
+        --button-secondary-bg: transparent;
+        --button-secondary-text: #e0bfb8;
+        --button-secondary-border: #e0bfb8;
+        --button-secondary-hover-bg: #e0bfb8;
+        --button-secondary-hover-text: #6d4c41;
+
+        /* Feature card */
+        --feature-card-bg: linear-gradient(145deg, #6d4c41 0%, #8d6e63 100%);
+        --feature-card-title: #f7e1dc;
+        --feature-card-text: white;
+
+        /* Footer */
+        --footer-bg: #6d4c41;
+        --footer-text: white;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--off-white);
+        color: var(--dark-gray);
+        line-height: 1.6;
+        transition: all 0.3s ease;
+      }
+
+      header {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 1.5rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        height: 45px;
+        width: auto;
+        object-fit: contain;
+        padding: 5px;
+        display: block;
+      }
+
+      .theme-selector {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .theme-selector-label {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      .theme-select {
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid var(--light-gray);
+        background-color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+
+      .theme-select:focus {
+        outline: none;
+        border-color: var(--primary-gold);
+      }
+
+      .hero {
+        padding-top: 120px;
+        padding-bottom: 3rem;
+        background: linear-gradient(170deg, white 0%, var(--off-white) 100%);
+        transition: all 0.3s ease;
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-gold);
+        transition: all 0.3s ease;
+      }
+
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.2rem;
+        color: var(--navy);
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        transition: all 0.3s ease;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--navy);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        max-width: 800px;
+        transition: all 0.3s ease;
+      }
+
+      .subtitle {
+        font-size: 1.4rem;
+        color: var(--medium-gray);
+        font-weight: 300;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+      }
+
+      .color-palette {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .color-card {
+        width: 200px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        background-color: white;
+        transition: all 0.3s ease;
+      }
+
+      .color-display {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .color-display.light-text {
+        color: var(--dark-gray);
+      }
+
+      .color-info {
+        padding: 1rem;
+        background-color: white;
+      }
+
+      .color-name {
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+      }
+
+      .color-hex {
+        font-family: monospace;
+        color: var(--medium-gray);
+      }
+
+      .typography {
+        margin: 3rem 0;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+      }
+
+      .font-example {
+        margin: 2rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        transition: all 0.3s ease;
+      }
+
+      .font-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: var(--medium-gray);
+        transition: all 0.3s ease;
+      }
+
+      .heading-example {
+        font-family: "Playfair Display", serif;
+        transition: all 0.3s ease;
+        color: var(--navy);
+      }
+
+      .body-example {
+        font-family: "Montserrat", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      .font-xl {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+
+      .font-lg {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+
+      .font-md {
+        font-size: 1.5rem;
+        line-height: 1.4;
+      }
+
+      .font-sm {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .font-xs {
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .usage-examples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .example-card {
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+      }
+
+      .example-preview {
+        height: 200px;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .example-caption {
+        padding: 1rem;
+        background-color: var(--light-gray);
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .button-primary {
+        background-color: var(--button-primary-bg);
+        color: var(--button-primary-text);
+        border: none;
+      }
+
+      .button-primary:hover {
+        background-color: var(--button-primary-hover-bg);
+        color: var(--button-primary-hover-text);
+      }
+
+      .button-secondary {
+        background-color: var(--button-secondary-bg);
+        color: var(--button-secondary-text);
+        border: 2px solid var(--button-secondary-border);
+      }
+
+      .button-secondary:hover {
+        background-color: var(--button-secondary-hover-bg);
+        color: var(--button-secondary-hover-text);
+      }
+
+      .feature-card {
+        background: var(--feature-card-bg);
+      }
+
+      .feature-heading {
+        font-family: "Playfair Display";
+        color: var(--feature-card-title) !important;
+        margin-bottom: 1rem;
+      }
+
+      .feature-text {
+        color: var(--feature-card-text) !important;
+        opacity: 0.9;
+      }
+
+      footer {
+        background-color: var(--footer-bg);
+        color: var(--footer-text);
+        padding: 3rem 0;
+        margin-top: 4rem;
+        transition: all 0.3s ease;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-text {
+        opacity: 0.8;
+        font-size: 0.9rem;
+      }
+
+      .theme-palettes {
+        display: none;
+      }
+
+      .theme-palette {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .theme-indicator {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background-color: var(--primary-gold);
+        color: var(--navy);
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        transition: all 0.3s ease;
+      }
+
+      .theme-colors {
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .theme-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: var(--navy);
+      }
+
+      @media (max-width: 768px) {
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin-bottom: 1.5rem;
-            position: relative;
-            display: inline-block;
-            transition: all 0.3s ease;
+          font-size: 2.5rem;
         }
-        
-        h1::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary-gold);
-            transition: all 0.3s ease;
-        }
-        
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: var(--navy);
-            margin-bottom: 1rem;
-            margin-top: 3rem;
-            transition: all 0.3s ease;
-        }
-        
-        h3 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--navy);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            max-width: 800px;
-            transition: all 0.3s ease;
-        }
-        
-        .subtitle {
-            font-size: 1.4rem;
-            color: var(--medium-gray);
-            font-weight: 300;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
-        }
-        
-        .color-palette {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .color-card {
-            width: 200px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            background-color: white;
-            transition: all 0.3s ease;
-        }
-        
-        .color-display {
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .color-display.light-text {
-            color: var(--dark-gray);
-        }
-        
-        .color-info {
-            padding: 1rem;
-            background-color: white;
-        }
-        
-        .color-name {
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-        
-        .color-hex {
-            font-family: monospace;
-            color: var(--medium-gray);
-        }
-        
-        .typography {
-            margin: 3rem 0;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 20px rgba(0,0,0,0.06);
-            transition: all 0.3s ease;
-        }
-        
-        .font-example {
-            margin: 2rem 0;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--light-gray);
-            transition: all 0.3s ease;
-        }
-        
-        .font-details {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: var(--medium-gray);
-            transition: all 0.3s ease;
-        }
-        
-        .heading-example {
-            font-family: 'Playfair Display', serif;
-            transition: all 0.3s ease;
-            color: var(--navy);
-        }
-        
-        .body-example {
-            font-family: 'Montserrat', sans-serif;
-            transition: all 0.3s ease;
-        }
-        
-        .font-xl {
-            font-size: 2.5rem;
-            line-height: 1.2;
-        }
-        
-        .font-lg {
-            font-size: 2rem;
-            line-height: 1.3;
-        }
-        
-        .font-md {
-            font-size: 1.5rem;
-            line-height: 1.4;
-        }
-        
-        .font-sm {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        
-        .font-xs {
-            font-size: 0.875rem;
-            line-height: 1.6;
-        }
-        
-        .usage-examples {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .example-card {
-            background-color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 3px 20px rgba(0,0,0,0.06);
-            transition: all 0.3s ease;
-        }
-        
-        .example-preview {
-            height: 200px;
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .example-caption {
-            padding: 1rem;
-            background-color: var(--light-gray);
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-        
-        .button {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .button-primary {
-            background-color: var(--button-primary-bg);
-            color: var(--button-primary-text);
-            border: none;
-        }
-        
-        .button-primary:hover {
-            background-color: var(--button-primary-hover-bg);
-            color: var(--button-primary-hover-text);
-        }
-        
-        .button-secondary {
-            background-color: var(--button-secondary-bg);
-            color: var(--button-secondary-text);
-            border: 2px solid var(--button-secondary-border);
-        }
-        
-        .button-secondary:hover {
-            background-color: var(--button-secondary-hover-bg);
-            color: var(--button-secondary-hover-text);
-        }
-        
-        .feature-card {
-            background: var(--feature-card-bg);
-        }
-        
-        .feature-heading {
-            font-family: 'Playfair Display';
-            color: var(--feature-card-title) !important;
-            margin-bottom: 1rem;
-        }
-        
-        .feature-text {
-            color: var(--feature-card-text) !important;
-            opacity: 0.9;
-        }
-        
-        footer {
-            background-color: var(--footer-bg);
-            color: var(--footer-text);
-            padding: 3rem 0;
-            margin-top: 4rem;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .footer-text {
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-        
-        .theme-palettes {
-            display: none;
-        }
-        
-        .theme-palette {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .theme-indicator {
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background-color: var(--primary-gold);
-            color: var(--navy);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            z-index: 99;
-            transition: all 0.3s ease;
-        }
-        
-        .theme-colors {
-            margin-top: 2rem;
-            background-color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-        }
-        
-        .theme-title {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--navy);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .color-palette {
-                justify-content: center;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 1.5rem;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .theme-selector {
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container header-content">
-            <img src="./Color logo - no background.png" alt="Cara Markets Logo" class="logo">
-            <div class="theme-selector">
-                <span class="theme-selector-label">Theme:</span>
-                <select class="theme-select" id="themeSelect">
-                    <option value="standard">Standard Gold/Navy</option>
-                    <option value="purple">Purple Elegance</option>
-                    <option value="teal">Teal Prosperity</option>
-                    <option value="crimson">Crimson Power</option>
-                    <option value="emerald">Emerald Growth</option>
-                    <option value="amber">Amber Wealth</option>
-                    <option value="sapphire">Sapphire Trust</option>
-                    <option value="rose">Rose Passion</option>
-                </select>
-            </div>
-        </div>
-    </header>
-    
-    <div class="theme-indicator">Standard Gold/Navy</div>
-    
-    <section class="hero">
-        <div class="container">
-            <h1>Cara Markets</h1>
-            <p class="subtitle">Brand Identity Guide</p>
-            <p>Welcome to the Cara Markets brand identity guide. This document outlines the core visual elements that define our brand across all platforms, ensuring consistency and professionalism in all our communications.</p>
-        </div>
-    </section>
-    
-    <section class="container">
-        <div class="theme-colors">
-            <h2 class="theme-title">Current Theme Colors</h2>
-            
-            <!-- Standard Theme Palette -->
-            <div class="color-palette standard-palette">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #d4b964;">Primary Gold</div>
-                    <div class="color-info">
-                        <div class="color-name">Primary Gold</div>
-                        <div class="color-hex">#d4b964</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #0a1e3c;">Navy</div>
-                    <div class="color-info">
-                        <div class="color-name">Navy</div>
-                        <div class="color-hex">#0a1e3c</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: white;">White</div>
-                    <div class="color-info">
-                        <div class="color-name">White</div>
-                        <div class="color-hex">#ffffff</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #1a3a64;">Light Navy</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Navy</div>
-                        <div class="color-hex">#1a3a64</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #f9f9fb;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#f9f9fb</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #b39646;">Dark Gold</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Gold</div>
-                        <div class="color-hex">#b39646</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Purple Theme Palette -->
-            <div class="color-palette purple-palette" style="display: none;">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #9d4edd;">Primary Purple</div>
-                    <div class="color-info">
-                        <div class="color-name">Primary Purple</div>
-                        <div class="color-hex">#9d4edd</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #240046;">Deep Purple</div>
-                    <div class="color-info">
-                        <div class="color-name">Deep Purple</div>
-                        <div class="color-hex">#240046</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #7b2cbf;">Medium Purple</div>
-                    <div class="color-info">
-                        <div class="color-name">Medium Purple</div>
-                        <div class="color-hex">#7b2cbf</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #c77dff;">Light Purple</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Purple</div>
-                        <div class="color-hex">#c77dff</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #fbf8ff;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#fbf8ff</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #3c096c;">Dark Purple</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Purple</div>
-                        <div class="color-hex">#3c096c</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Teal Theme Palette -->
-            <div class="color-palette teal-palette" style="display: none;">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #2cb1bc;">Primary Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Primary Teal</div>
-                        <div class="color-hex">#2cb1bc</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #014d4e;">Deep Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Deep Teal</div>
-                        <div class="color-hex">#014d4e</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #0e7c86;">Medium Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Medium Teal</div>
-                        <div class="color-hex">#0e7c86</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #5eced6;">Light Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Teal</div>
-                        <div class="color-hex">#5eced6</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #f0f9fa;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#f0f9fa</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #0a6c6e;">Dark Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Teal</div>
-                        <div class="color-hex">#0a6c6e</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Crimson Theme Palette -->
-            <div class="color-palette crimson-palette" style="display: none;">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #e63946;">Crimson Red</div>
-                    <div class="color-info">
-                        <div class="color-name">Crimson Red</div>
-                        <div class="color-hex">#e63946</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #1d3557;">Deep Navy</div>
-                    <div class="color-info">
-                        <div class="color-name">Deep Navy</div>
-                        <div class="color-hex">#1d3557</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #2a4865;">Medium Blue</div>
-                    <div class="color-info">
-                        <div class="color-name">Medium Blue</div>
-                        <div class="color-hex">#2a4865</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #ff6b6b;">Light Red</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Red</div>
-                        <div class="color-hex">#ff6b6b</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #f8f9fa;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#f8f9fa</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #c1121f;">Dark Red</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Red</div>
-                        <div class="color-hex">#c1121f</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Emerald Theme Palette -->
-            <div class="color-palette emerald-palette" style="display: none;">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #2dd4bf;">Emerald</div>
-                    <div class="color-info">
-                        <div class="color-name">Emerald</div>
-                        <div class="color-hex">#2dd4bf</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #064e3b;">Deep Green</div>
-                    <div class="color-info">
-                        <div class="color-name">Deep Green</div>
-                        <div class="color-hex">#064e3b</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #14b8a6;">Medium Green</div>
-                    <div class="color-info">
-                        <div class="color-name">Medium Green</div>
-                        <div class="color-hex">#14b8a6</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #5eead4;">Light Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Teal</div>
-                        <div class="color-hex">#5eead4</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #f0fdfa;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#f0fdfa</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #0f766e;">Dark Teal</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Teal</div>
-                        <div class="color-hex">#0f766e</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sapphire Theme Palette -->
-<div class="color-palette sapphire-palette" style="display: none;">
-    <div class="color-card">
-        <div class="color-display" style="background-color: #3a86ff;">Sapphire Blue</div>
-        <div class="color-info">
-            <div class="color-name">Sapphire Blue</div>
-            <div class="color-hex">#3a86ff</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #1d3557;">Deep Blue</div>
-        <div class="color-info">
-            <div class="color-name">Deep Blue</div>
-            <div class="color-hex">#1d3557</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #0055d4;">Medium Blue</div>
-        <div class="color-info">
-            <div class="color-name">Medium Blue</div>
-            <div class="color-hex">#0055d4</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #6ea8ff;">Light Blue</div>
-        <div class="color-info">
-            <div class="color-name">Light Blue</div>
-            <div class="color-hex">#6ea8ff</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display light-text" style="background-color: #f0f6ff;">Off White</div>
-        <div class="color-info">
-            <div class="color-name">Off White</div>
-            <div class="color-hex">#f0f6ff</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #2c4f7c;">Dark Blue</div>
-        <div class="color-info">
-            <div class="color-name">Dark Blue</div>
-            <div class="color-hex">#2c4f7c</div>
-        </div>
-    </div>
-</div>
 
-<!-- Rose Theme Palette -->
-<div class="color-palette rose-palette" style="display: none;">
-    <div class="color-card">
-        <div class="color-display" style="background-color: #ff5c8d;">Rose Pink</div>
-        <div class="color-info">
-            <div class="color-name">Rose Pink</div>
-            <div class="color-hex">#ff5c8d</div>
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .color-palette {
+          justify-content: center;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          text-align: center;
+          gap: 1.5rem;
+        }
+
+        .header-content {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .theme-selector {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <img
+          src="./Color logo - no background.png"
+          alt="Cara Markets Logo"
+          class="logo"
+        />
+        <div class="theme-selector">
+          <span class="theme-selector-label">Theme:</span>
+          <select class="theme-select" id="themeSelect">
+            <option value="standard">Standard Gold/Navy</option>
+            <option value="purple">Purple Elegance</option>
+            <option value="teal">Teal Prosperity</option>
+            <option value="crimson">Crimson Power</option>
+            <option value="emerald">Emerald Growth</option>
+            <option value="amber">Amber Wealth</option>
+            <option value="sapphire">Sapphire Trust</option>
+            <option value="rose">Rose Passion</option>
+            <option value="pearl">Pearl & Gold</option>
+            <option value="silver">Silver Luxury</option>
+            <option value="champagne">Champagne Gold</option>
+            <option value="rosegold">Rose Gold</option>
+          </select>
         </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #4a0e29;">Deep Rose</div>
-        <div class="color-info">
-            <div class="color-name">Deep Rose</div>
-            <div class="color-hex">#4a0e29</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #d90429;">Medium Red</div>
-        <div class="color-info">
-            <div class="color-name">Medium Red</div>
-            <div class="color-hex">#d90429</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #ffafcc;">Light Pink</div>
-        <div class="color-info">
-            <div class="color-name">Light Pink</div>
-            <div class="color-hex">#ffafcc</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display light-text" style="background-color: #fff0f5;">Off White</div>
-        <div class="color-info">
-            <div class="color-name">Off White</div>
-            <div class="color-hex">#fff0f5</div>
-        </div>
-    </div>
-    <div class="color-card">
-        <div class="color-display" style="background-color: #610f33;">Dark Rose</div>
-        <div class="color-info">
-            <div class="color-name">Dark Rose</div>
-            <div class="color-hex">#610f33</div>
-        </div>
-    </div>
-</div>
-            <!-- Amber Theme Palette -->
-            <div class="color-palette amber-palette" style="display: none;">
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #f59e0b;">Amber</div>
-                    <div class="color-info">
-                        <div class="color-name">Amber</div>
-                        <div class="color-hex">#f59e0b</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #422006;">Deep Brown</div>
-                    <div class="color-info">
-                        <div class="color-name">Deep Brown</div>
-                        <div class="color-hex">#422006</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #d97706;">Medium Amber</div>
-                    <div class="color-info">
-                        <div class="color-name">Medium Amber</div>
-                        <div class="color-hex">#d97706</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #fbbf24;">Light Amber</div>
-                    <div class="color-info">
-                        <div class="color-name">Light Amber</div>
-                        <div class="color-hex">#fbbf24</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display light-text" style="background-color: #fffbeb;">Off White</div>
-                    <div class="color-info">
-                        <div class="color-name">Off White</div>
-                        <div class="color-hex">#fffbeb</div>
-                    </div>
-                </div>
-                <div class="color-card">
-                    <div class="color-display" style="background-color: #713f12;">Dark Brown</div>
-                    <div class="color-info">
-                        <div class="color-name">Dark Brown</div>
-                        <div class="color-hex">#713f12</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <h2>Typography</h2>
-        <p>Our brand uses a combination of two fonts that complement each other to create a sophisticated and professional look.</p>
-        
-        <div class="typography">
-            <div class="font-example">
-                <div class="font-details">
-                    <span>Playfair Display / Heading Font / 700 Weight</span>
-                    <span>Used for: Headlines, Section Titles</span>
-                </div>
-                <div class="heading-example font-xl">Investment Solutions for Every Need</div>
-            </div>
-            
-            <div class="font-example">
-                <div class="font-details">
-                    <span>Playfair Display / Subheading / 600 Weight</span>
-                    <span>Used for: Subheadings, Feature Titles</span>
-                </div>
-                <div class="heading-example font-lg">Creating Wealth Through Strategic Planning</div>
-            </div>
-            
-            <div class="font-example">
-                <div class="font-details">
-                    <span>Montserrat / Body Text / 400 Weight</span>
-                    <span>Used for: Body Text, Descriptions</span>
-                </div>
-                <div class="body-example font-md">Our team of expert advisors works with you to create personalized investment strategies tailored to your financial goals.</div>
-            </div>
-            
-            <div class="font-example">
-                <div class="font-details">
-                    <span>Montserrat / Regular Text / 400 Weight</span>
-                    <span>Used for: Regular Content, Paragraphs</span>
-                </div>
-                <div class="body-example font-sm">Cara Markets provides comprehensive financial planning services including retirement planning, investment management, tax optimization, and estate planning strategies designed to help you achieve financial security and peace of mind.</div>
-            </div>
-            
-            <div class="font-example" style="border-bottom: none;">
-                <div class="font-details">
-                    <span>Montserrat / Small Text / 300 Weight</span>
-                    <span>Used for: Captions, Notes, Footer Text</span>
-                </div>
-                <div class="body-example font-xs">Investment products involve risk and may not be suitable for all investors. Past performance is not a guarantee of future results. Please read all offering documents carefully before investing.</div>
-            </div>
-        </div>
-        
-        <h2>UI Elements & Components</h2>
-        <p>Consistent use of UI elements helps maintain brand recognition across different platforms and products.</p>
-        
-        <h3>Buttons</h3>
-        <div style="margin: 2rem 0; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 3px 20px rgba(0,0,0,0.06);">
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem;">
-                <div>
-                    <p style="margin-bottom: 1rem; font-weight: 500;">Primary Button</p>
-                    <a href="#" class="button button-primary">Get Started</a>
-                </div>
-                <div>
-                    <p style="margin-bottom: 1rem; font-weight: 500;">Secondary Button</p>
-                    <a href="#" class="button button-secondary">Learn More</a>
-                </div>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
-                <div>
-                    <p style="margin-bottom: 1rem; font-weight: 500;">Primary Button (Hover)</p>
-                    <a href="#" class="button button-primary" style="background-color: var(--button-primary-hover-bg); color: var(--button-primary-hover-text);">Get Started</a>
-                </div>
-                <div>
-                    <p style="margin-bottom: 1rem; font-weight: 500;">Secondary Button (Hover)</p>
-                    <a href="#" class="button button-secondary" style="background-color: var(--button-secondary-hover-bg); color: var(--button-secondary-hover-text);">Learn More</a>
-                </div>
-            </div>
-        </div>
-        
-        <h3>Feature Cards</h3>
-        <div class="usage-examples">
-            <div class="example-card">
-                <div class="example-preview feature-card">
-                    <h3 class="feature-heading">Wealth Management</h3>
-                    <p class="feature-text">Personalized strategies designed to grow and protect your assets over time.</p>
-                </div>
-                <div class="example-caption">Feature card with primary brand color as accent</div>
-            </div>
-            <div class="example-card">
-                <div class="example-preview" style="background-color: white;">
-                    <h3 style="color: var(--navy);">Retirement Planning</h3>
-                    <p>Secure your future with our comprehensive retirement solutions and expert guidance.</p>
-                </div>
-                <div class="example-caption">Standard information card with navy heading</div>
-            </div>
-        </div>
+      </div>
+    </header>
+
+    <div class="theme-indicator">Standard Gold/Navy</div>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Cara Markets</h1>
+        <p class="subtitle">Brand Identity Guide</p>
+        <p>
+          Welcome to the Cara Markets brand identity guide. This document
+          outlines the core visual elements that define our brand across all
+          platforms, ensuring consistency and professionalism in all our
+          communications.
+        </p>
+      </div>
     </section>
-    
-    <footer>
-        <div class="container footer-content">
-            <img src="./Color logo - no background.png" alt="Cara Markets Logo" class="logo" style="height: 50px;">
-            <div class="footer-text">© 2025 Cara Markets. All rights reserved.</div>
+
+    <section class="container">
+      <div class="theme-colors">
+        <h2 class="theme-title">Current Theme Colors</h2>
+
+        <!-- Standard Theme Palette -->
+        <div class="color-palette standard-palette">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #d4b964">
+              Primary Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Primary Gold</div>
+              <div class="color-hex">#d4b964</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #0a1e3c">
+              Navy
+            </div>
+            <div class="color-info">
+              <div class="color-name">Navy</div>
+              <div class="color-hex">#0a1e3c</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: white"
+            >
+              White
+            </div>
+            <div class="color-info">
+              <div class="color-name">White</div>
+              <div class="color-hex">#ffffff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #1a3a64">
+              Light Navy
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Navy</div>
+              <div class="color-hex">#1a3a64</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f9f9fb"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#f9f9fb</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #b39646">
+              Dark Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Gold</div>
+              <div class="color-hex">#b39646</div>
+            </div>
+          </div>
         </div>
+
+        <!-- Purple Theme Palette -->
+        <div class="color-palette purple-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #9d4edd">
+              Primary Purple
+            </div>
+            <div class="color-info">
+              <div class="color-name">Primary Purple</div>
+              <div class="color-hex">#9d4edd</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #240046">
+              Deep Purple
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Purple</div>
+              <div class="color-hex">#240046</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #7b2cbf">
+              Medium Purple
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Purple</div>
+              <div class="color-hex">#7b2cbf</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #c77dff">
+              Light Purple
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Purple</div>
+              <div class="color-hex">#c77dff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fbf8ff"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#fbf8ff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #3c096c">
+              Dark Purple
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Purple</div>
+              <div class="color-hex">#3c096c</div>
+            </div>
+          </div>
+        </div>
+        <!-- Pearl & Gold Theme Palette -->
+        <div class="color-palette pearl-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #d4af37">
+              Royal Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Royal Gold</div>
+              <div class="color-hex">#d4af37</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #5c5c5c">
+              Pearl Gray
+            </div>
+            <div class="color-info">
+              <div class="color-name">Pearl Gray</div>
+              <div class="color-hex">#5c5c5c</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #b8860b">
+              Deep Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Gold</div>
+              <div class="color-hex">#b8860b</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #f1d78c">
+              Light Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Gold</div>
+              <div class="color-hex">#f1d78c</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fefdfb"
+            >
+              Pearl White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Pearl White</div>
+              <div class="color-hex">#fefdfb</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #7e7e7e">
+              Medium Gray
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Gray</div>
+              <div class="color-hex">#7e7e7e</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silver Luxury Theme Palette -->
+        <div class="color-palette silver-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #c0c0c0">
+              Silver
+            </div>
+            <div class="color-info">
+              <div class="color-name">Silver</div>
+              <div class="color-hex">#c0c0c0</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #2e4053">
+              Steel Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Steel Blue</div>
+              <div class="color-hex">#2e4053</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #a9a9a9">
+              Dark Silver
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Silver</div>
+              <div class="color-hex">#a9a9a9</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #e5e5e5">
+              Light Silver
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Silver</div>
+              <div class="color-hex">#e5e5e5</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fafafa"
+            >
+              Ice White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Ice White</div>
+              <div class="color-hex">#fafafa</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #34495e">
+              Slate
+            </div>
+            <div class="color-info">
+              <div class="color-name">Slate</div>
+              <div class="color-hex">#34495e</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Champagne Theme Palette -->
+        <div class="color-palette champagne-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #f1c27d">
+              Champagne Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Champagne Gold</div>
+              <div class="color-hex">#f1c27d</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #606c38">
+              Olive Green
+            </div>
+            <div class="color-info">
+              <div class="color-name">Olive Green</div>
+              <div class="color-hex">#606c38</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #dda15e">
+              Amber Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Amber Gold</div>
+              <div class="color-hex">#dda15e</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #faecd8"
+            >
+              Cream
+            </div>
+            <div class="color-info">
+              <div class="color-name">Cream</div>
+              <div class="color-hex">#faecd8</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fefdf9"
+            >
+              Champagne White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Champagne White</div>
+              <div class="color-hex">#fefdf9</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #7d8a61">
+              Sage
+            </div>
+            <div class="color-info">
+              <div class="color-name">Sage</div>
+              <div class="color-hex">#7d8a61</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rose Gold Theme Palette -->
+        <div class="color-palette rosegold-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #e0bfb8">
+              Rose Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Rose Gold</div>
+              <div class="color-hex">#e0bfb8</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #6d4c41">
+              Chocolate
+            </div>
+            <div class="color-info">
+              <div class="color-name">Chocolate</div>
+              <div class="color-hex">#6d4c41</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #c8a99e">
+              Dark Rose Gold
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Rose Gold</div>
+              <div class="color-hex">#c8a99e</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f7e1dc"
+            >
+              Blush
+            </div>
+            <div class="color-info">
+              <div class="color-name">Blush</div>
+              <div class="color-hex">#f7e1dc</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fdf9f8"
+            >
+              Rose White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Rose White</div>
+              <div class="color-hex">#fdf9f8</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #8d6e63">
+              Mocha
+            </div>
+            <div class="color-info">
+              <div class="color-name">Mocha</div>
+              <div class="color-hex">#8d6e63</div>
+            </div>
+          </div>
+        </div>
+        <!-- Teal Theme Palette -->
+        <div class="color-palette teal-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #2cb1bc">
+              Primary Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Primary Teal</div>
+              <div class="color-hex">#2cb1bc</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #014d4e">
+              Deep Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Teal</div>
+              <div class="color-hex">#014d4e</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #0e7c86">
+              Medium Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Teal</div>
+              <div class="color-hex">#0e7c86</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #5eced6">
+              Light Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Teal</div>
+              <div class="color-hex">#5eced6</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f0f9fa"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#f0f9fa</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #0a6c6e">
+              Dark Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Teal</div>
+              <div class="color-hex">#0a6c6e</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crimson Theme Palette -->
+        <div class="color-palette crimson-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #e63946">
+              Crimson Red
+            </div>
+            <div class="color-info">
+              <div class="color-name">Crimson Red</div>
+              <div class="color-hex">#e63946</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #1d3557">
+              Deep Navy
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Navy</div>
+              <div class="color-hex">#1d3557</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #2a4865">
+              Medium Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Blue</div>
+              <div class="color-hex">#2a4865</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #ff6b6b">
+              Light Red
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Red</div>
+              <div class="color-hex">#ff6b6b</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f8f9fa"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#f8f9fa</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #c1121f">
+              Dark Red
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Red</div>
+              <div class="color-hex">#c1121f</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emerald Theme Palette -->
+        <div class="color-palette emerald-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #2dd4bf">
+              Emerald
+            </div>
+            <div class="color-info">
+              <div class="color-name">Emerald</div>
+              <div class="color-hex">#2dd4bf</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #064e3b">
+              Deep Green
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Green</div>
+              <div class="color-hex">#064e3b</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #14b8a6">
+              Medium Green
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Green</div>
+              <div class="color-hex">#14b8a6</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #5eead4">
+              Light Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Teal</div>
+              <div class="color-hex">#5eead4</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f0fdfa"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#f0fdfa</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #0f766e">
+              Dark Teal
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Teal</div>
+              <div class="color-hex">#0f766e</div>
+            </div>
+          </div>
+        </div>
+        <!-- Sapphire Theme Palette -->
+        <div class="color-palette sapphire-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #3a86ff">
+              Sapphire Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Sapphire Blue</div>
+              <div class="color-hex">#3a86ff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #1d3557">
+              Deep Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Blue</div>
+              <div class="color-hex">#1d3557</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #0055d4">
+              Medium Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Blue</div>
+              <div class="color-hex">#0055d4</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #6ea8ff">
+              Light Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Blue</div>
+              <div class="color-hex">#6ea8ff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #f0f6ff"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#f0f6ff</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #2c4f7c">
+              Dark Blue
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Blue</div>
+              <div class="color-hex">#2c4f7c</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rose Theme Palette -->
+        <div class="color-palette rose-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #ff5c8d">
+              Rose Pink
+            </div>
+            <div class="color-info">
+              <div class="color-name">Rose Pink</div>
+              <div class="color-hex">#ff5c8d</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #4a0e29">
+              Deep Rose
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Rose</div>
+              <div class="color-hex">#4a0e29</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #d90429">
+              Medium Red
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Red</div>
+              <div class="color-hex">#d90429</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #ffafcc">
+              Light Pink
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Pink</div>
+              <div class="color-hex">#ffafcc</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fff0f5"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#fff0f5</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #610f33">
+              Dark Rose
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Rose</div>
+              <div class="color-hex">#610f33</div>
+            </div>
+          </div>
+        </div>
+        <!-- Amber Theme Palette -->
+        <div class="color-palette amber-palette" style="display: none">
+          <div class="color-card">
+            <div class="color-display" style="background-color: #f59e0b">
+              Amber
+            </div>
+            <div class="color-info">
+              <div class="color-name">Amber</div>
+              <div class="color-hex">#f59e0b</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #422006">
+              Deep Brown
+            </div>
+            <div class="color-info">
+              <div class="color-name">Deep Brown</div>
+              <div class="color-hex">#422006</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #d97706">
+              Medium Amber
+            </div>
+            <div class="color-info">
+              <div class="color-name">Medium Amber</div>
+              <div class="color-hex">#d97706</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #fbbf24">
+              Light Amber
+            </div>
+            <div class="color-info">
+              <div class="color-name">Light Amber</div>
+              <div class="color-hex">#fbbf24</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div
+              class="color-display light-text"
+              style="background-color: #fffbeb"
+            >
+              Off White
+            </div>
+            <div class="color-info">
+              <div class="color-name">Off White</div>
+              <div class="color-hex">#fffbeb</div>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-display" style="background-color: #713f12">
+              Dark Brown
+            </div>
+            <div class="color-info">
+              <div class="color-name">Dark Brown</div>
+              <div class="color-hex">#713f12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Typography</h2>
+      <p>
+        Our brand uses a combination of two fonts that complement each other to
+        create a sophisticated and professional look.
+      </p>
+
+      <div class="typography">
+        <div class="font-example">
+          <div class="font-details">
+            <span>Playfair Display / Heading Font / 700 Weight</span>
+            <span>Used for: Headlines, Section Titles</span>
+          </div>
+          <div class="heading-example font-xl">
+            Investment Solutions for Every Need
+          </div>
+        </div>
+
+        <div class="font-example">
+          <div class="font-details">
+            <span>Playfair Display / Subheading / 600 Weight</span>
+            <span>Used for: Subheadings, Feature Titles</span>
+          </div>
+          <div class="heading-example font-lg">
+            Creating Wealth Through Strategic Planning
+          </div>
+        </div>
+
+        <div class="font-example">
+          <div class="font-details">
+            <span>Montserrat / Body Text / 400 Weight</span>
+            <span>Used for: Body Text, Descriptions</span>
+          </div>
+          <div class="body-example font-md">
+            Our team of expert advisors works with you to create personalized
+            investment strategies tailored to your financial goals.
+          </div>
+        </div>
+
+        <div class="font-example">
+          <div class="font-details">
+            <span>Montserrat / Regular Text / 400 Weight</span>
+            <span>Used for: Regular Content, Paragraphs</span>
+          </div>
+          <div class="body-example font-sm">
+            Cara Markets provides comprehensive financial planning services
+            including retirement planning, investment management, tax
+            optimization, and estate planning strategies designed to help you
+            achieve financial security and peace of mind.
+          </div>
+        </div>
+
+        <div class="font-example" style="border-bottom: none">
+          <div class="font-details">
+            <span>Montserrat / Small Text / 300 Weight</span>
+            <span>Used for: Captions, Notes, Footer Text</span>
+          </div>
+          <div class="body-example font-xs">
+            Investment products involve risk and may not be suitable for all
+            investors. Past performance is not a guarantee of future results.
+            Please read all offering documents carefully before investing.
+          </div>
+        </div>
+      </div>
+
+      <h2>UI Elements & Components</h2>
+      <p>
+        Consistent use of UI elements helps maintain brand recognition across
+        different platforms and products.
+      </p>
+
+      <h3>Buttons</h3>
+      <div
+        style="
+          margin: 2rem 0;
+          background-color: white;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+        "
+      >
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem"
+        >
+          <div>
+            <p style="margin-bottom: 1rem; font-weight: 500">Primary Button</p>
+            <a href="#" class="button button-primary">Get Started</a>
+          </div>
+          <div>
+            <p style="margin-bottom: 1rem; font-weight: 500">
+              Secondary Button
+            </p>
+            <a href="#" class="button button-secondary">Learn More</a>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem">
+          <div>
+            <p style="margin-bottom: 1rem; font-weight: 500">
+              Primary Button (Hover)
+            </p>
+            <a
+              href="#"
+              class="button button-primary"
+              style="
+                background-color: var(--button-primary-hover-bg);
+                color: var(--button-primary-hover-text);
+              "
+              >Get Started</a
+            >
+          </div>
+          <div>
+            <p style="margin-bottom: 1rem; font-weight: 500">
+              Secondary Button (Hover)
+            </p>
+            <a
+              href="#"
+              class="button button-secondary"
+              style="
+                background-color: var(--button-secondary-hover-bg);
+                color: var(--button-secondary-hover-text);
+              "
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <h3>Feature Cards</h3>
+      <div class="usage-examples">
+        <div class="example-card">
+          <div class="example-preview feature-card">
+            <h3 class="feature-heading">Wealth Management</h3>
+            <p class="feature-text">
+              Personalized strategies designed to grow and protect your assets
+              over time.
+            </p>
+          </div>
+          <div class="example-caption">
+            Feature card with primary brand color as accent
+          </div>
+        </div>
+        <div class="example-card">
+          <div class="example-preview" style="background-color: white">
+            <h3 style="color: var(--navy)">Retirement Planning</h3>
+            <p>
+              Secure your future with our comprehensive retirement solutions and
+              expert guidance.
+            </p>
+          </div>
+          <div class="example-caption">
+            Standard information card with navy heading
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <img
+          src="./Color logo - no background.png"
+          alt="Cara Markets Logo"
+          class="logo"
+          style="height: 50px"
+        />
+        <div class="footer-text">© 2025 Cara Markets. All rights reserved.</div>
+      </div>
     </footer>
 
     <script>
-       const themeSelect = document.getElementById('themeSelect');
-const themeIndicator = document.querySelector('.theme-indicator');
-const standardPalette = document.querySelector('.standard-palette');
-const purplePalette = document.querySelector('.purple-palette');
-const tealPalette = document.querySelector('.teal-palette');
-const crimsonPalette = document.querySelector('.crimson-palette');
-const emeraldPalette = document.querySelector('.emerald-palette');
-const amberPalette = document.querySelector('.amber-palette');
-const sapphirePalette = document.querySelector('.sapphire-palette');
-const rosePalette = document.querySelector('.rose-palette');
+      const themeSelect = document.getElementById("themeSelect");
+      const themeIndicator = document.querySelector(".theme-indicator");
+      const standardPalette = document.querySelector(".standard-palette");
+      const purplePalette = document.querySelector(".purple-palette");
+      const tealPalette = document.querySelector(".teal-palette");
+      const crimsonPalette = document.querySelector(".crimson-palette");
+      const emeraldPalette = document.querySelector(".emerald-palette");
+      const amberPalette = document.querySelector(".amber-palette");
+      const pearlPalette = document.querySelector(".pearl-palette");
+      const silverPalette = document.querySelector(".silver-palette");
+      const champagnePalette = document.querySelector(".champagne-palette");
+      const rosegoldPalette = document.querySelector(".rosegold-palette");
+      const sapphirePalette = document.querySelector(".sapphire-palette");
+      const rosePalette = document.querySelector(".rose-palette");
 
-themeSelect.addEventListener('change', function() {
-    const selectedTheme = this.value;
-    document.body.className = '';
-    
-    // Hide all palettes
-    standardPalette.style.display = 'none';
-    purplePalette.style.display = 'none';
-    tealPalette.style.display = 'none';
-    crimsonPalette.style.display = 'none';
-    emeraldPalette.style.display = 'none';
-    amberPalette.style.display = 'none';
-    sapphirePalette.style.display = 'none';
-    rosePalette.style.display = 'none';
-    
-    if (selectedTheme === 'purple') {
-        document.body.classList.add('purple-theme');
-        themeIndicator.textContent = 'Purple Elegance';
-        purplePalette.style.display = 'flex';
-    } else if (selectedTheme === 'teal') {
-        document.body.classList.add('teal-theme');
-        themeIndicator.textContent = 'Teal Prosperity';
-        tealPalette.style.display = 'flex';
-    } else if (selectedTheme === 'crimson') {
-        document.body.classList.add('crimson-theme');
-        themeIndicator.textContent = 'Crimson Power';
-        crimsonPalette.style.display = 'flex';
-    } else if (selectedTheme === 'emerald') {
-        document.body.classList.add('emerald-theme');
-        themeIndicator.textContent = 'Emerald Growth';
-        emeraldPalette.style.display = 'flex';
-    } else if (selectedTheme === 'amber') {
-        document.body.classList.add('amber-theme');
-        themeIndicator.textContent = 'Amber Wealth';
-        amberPalette.style.display = 'flex';
-    } else if (selectedTheme === 'sapphire') {
-        document.body.classList.add('sapphire-theme');
-        themeIndicator.textContent = 'Sapphire Trust';
-        sapphirePalette.style.display = 'flex';
-    } else if (selectedTheme === 'rose') {
-        document.body.classList.add('rose-theme');
-        themeIndicator.textContent = 'Rose Passion';
-        rosePalette.style.display = 'flex';
-    } else {
-        themeIndicator.textContent = 'Standard Gold/Navy';
-        standardPalette.style.display = 'flex';
-    }
-});
+      themeSelect.addEventListener("change", function () {
+        const selectedTheme = this.value;
+        document.body.className = "";
+
+        // Hide all palettes
+        standardPalette.style.display = "none";
+        purplePalette.style.display = "none";
+        tealPalette.style.display = "none";
+        crimsonPalette.style.display = "none";
+        emeraldPalette.style.display = "none";
+        amberPalette.style.display = "none";
+        pearlPalette.style.display = "none";
+        silverPalette.style.display = "none";
+        champagnePalette.style.display = "none";
+        rosegoldPalette.style.display = "none";
+        sapphirePalette.style.display = "none";
+        rosePalette.style.display = "none";
+        if (selectedTheme === "purple") {
+          document.body.classList.add("purple-theme");
+          themeIndicator.textContent = "Purple Elegance";
+          purplePalette.style.display = "flex";
+        } else if (selectedTheme === "teal") {
+          document.body.classList.add("teal-theme");
+          themeIndicator.textContent = "Teal Prosperity";
+          tealPalette.style.display = "flex";
+        } else if (selectedTheme === "crimson") {
+          document.body.classList.add("crimson-theme");
+          themeIndicator.textContent = "Crimson Power";
+          crimsonPalette.style.display = "flex";
+        } else if (selectedTheme === "emerald") {
+          document.body.classList.add("emerald-theme");
+          themeIndicator.textContent = "Emerald Growth";
+          emeraldPalette.style.display = "flex";
+        } else if (selectedTheme === "amber") {
+          document.body.classList.add("amber-theme");
+          themeIndicator.textContent = "Amber Wealth";
+          amberPalette.style.display = "flex";
+        } else if (selectedTheme === "pearl") {
+          document.body.classList.add("pearl-theme");
+          themeIndicator.textContent = "Pearl & Gold";
+          pearlPalette.style.display = "flex";
+        } else if (selectedTheme === "silver") {
+          document.body.classList.add("silver-theme");
+          themeIndicator.textContent = "Silver Luxury";
+          silverPalette.style.display = "flex";
+        } else if (selectedTheme === "champagne") {
+          document.body.classList.add("champagne-theme");
+          themeIndicator.textContent = "Champagne Gold";
+          champagnePalette.style.display = "flex";
+        } else if (selectedTheme === "rosegold") {
+          document.body.classList.add("rosegold-theme");
+          themeIndicator.textContent = "Rose Gold";
+          rosegoldPalette.style.display = "flex";
+        } else if (selectedTheme === "sapphire") {
+          document.body.classList.add("sapphire-theme");
+          themeIndicator.textContent = "Sapphire Trust";
+          sapphirePalette.style.display = "flex";
+        } else if (selectedTheme === "rose") {
+          document.body.classList.add("rose-theme");
+          themeIndicator.textContent = "Rose Passion";
+          rosePalette.style.display = "flex";
+        } else {
+          themeIndicator.textContent = "Standard Gold/Navy";
+          standardPalette.style.display = "flex";
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
