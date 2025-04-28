@@ -206,7 +206,71 @@
             --footer-bg: #422006;
             --footer-text: white;
         }
-        
+        /* Sapphire Theme */
+.sapphire-theme {
+    --primary-gold: #3a86ff;
+    --dark-gold: #0055d4;
+    --light-gold: #6ea8ff;
+    --navy: #1d3557;
+    --light-navy: #2c4f7c;
+    --off-white: #f0f6ff;
+    --light-gray: #e2e8f0;
+    --medium-gray: #8d99ae;
+    --dark-gray: #343a40;
+    
+    /* Button colors */
+    --button-primary-bg: #3a86ff;
+    --button-primary-text: white;
+    --button-primary-hover-bg: #0055d4;
+    --button-primary-hover-text: white;
+    --button-secondary-bg: transparent;
+    --button-secondary-text: #3a86ff;
+    --button-secondary-border: #3a86ff;
+    --button-secondary-hover-bg: #3a86ff;
+    --button-secondary-hover-text: white;
+    
+    /* Feature card */
+    --feature-card-bg: linear-gradient(145deg, #1d3557 0%, #2c4f7c 100%);
+    --feature-card-title: #6ea8ff;
+    --feature-card-text: white;
+    
+    /* Footer */
+    --footer-bg: #1d3557;
+    --footer-text: white;
+}
+
+/* Rose Theme */
+.rose-theme {
+    --primary-gold: #ff5c8d;
+    --dark-gold: #d90429;
+    --light-gold: #ffafcc;
+    --navy: #4a0e29;
+    --light-navy: #610f33;
+    --off-white: #fff0f5;
+    --light-gray: #fbe3eb;
+    --medium-gray: #b18c99;
+    --dark-gray: #4a3842;
+    
+    /* Button colors */
+    --button-primary-bg: #ff5c8d;
+    --button-primary-text: white;
+    --button-primary-hover-bg: #d90429;
+    --button-primary-hover-text: white;
+    --button-secondary-bg: transparent;
+    --button-secondary-text: #ff5c8d;
+    --button-secondary-border: #ff5c8d;
+    --button-secondary-hover-bg: #ff5c8d;
+    --button-secondary-hover-text: white;
+    
+    /* Feature card */
+    --feature-card-bg: linear-gradient(145deg, #4a0e29 0%, #610f33 100%);
+    --feature-card-title: #ffafcc;
+    --feature-card-text: white;
+    
+    /* Footer */
+    --footer-bg: #4a0e29;
+    --footer-text: white;
+}
         * {
             margin: 0;
             padding: 0;
@@ -627,6 +691,8 @@
                     <option value="crimson">Crimson Power</option>
                     <option value="emerald">Emerald Growth</option>
                     <option value="amber">Amber Wealth</option>
+                    <option value="sapphire">Sapphire Trust</option>
+                    <option value="rose">Rose Passion</option>
                 </select>
             </div>
         </div>
@@ -875,7 +941,97 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- Sapphire Theme Palette -->
+<div class="color-palette sapphire-palette" style="display: none;">
+    <div class="color-card">
+        <div class="color-display" style="background-color: #3a86ff;">Sapphire Blue</div>
+        <div class="color-info">
+            <div class="color-name">Sapphire Blue</div>
+            <div class="color-hex">#3a86ff</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #1d3557;">Deep Blue</div>
+        <div class="color-info">
+            <div class="color-name">Deep Blue</div>
+            <div class="color-hex">#1d3557</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #0055d4;">Medium Blue</div>
+        <div class="color-info">
+            <div class="color-name">Medium Blue</div>
+            <div class="color-hex">#0055d4</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #6ea8ff;">Light Blue</div>
+        <div class="color-info">
+            <div class="color-name">Light Blue</div>
+            <div class="color-hex">#6ea8ff</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display light-text" style="background-color: #f0f6ff;">Off White</div>
+        <div class="color-info">
+            <div class="color-name">Off White</div>
+            <div class="color-hex">#f0f6ff</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #2c4f7c;">Dark Blue</div>
+        <div class="color-info">
+            <div class="color-name">Dark Blue</div>
+            <div class="color-hex">#2c4f7c</div>
+        </div>
+    </div>
+</div>
+
+<!-- Rose Theme Palette -->
+<div class="color-palette rose-palette" style="display: none;">
+    <div class="color-card">
+        <div class="color-display" style="background-color: #ff5c8d;">Rose Pink</div>
+        <div class="color-info">
+            <div class="color-name">Rose Pink</div>
+            <div class="color-hex">#ff5c8d</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #4a0e29;">Deep Rose</div>
+        <div class="color-info">
+            <div class="color-name">Deep Rose</div>
+            <div class="color-hex">#4a0e29</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #d90429;">Medium Red</div>
+        <div class="color-info">
+            <div class="color-name">Medium Red</div>
+            <div class="color-hex">#d90429</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #ffafcc;">Light Pink</div>
+        <div class="color-info">
+            <div class="color-name">Light Pink</div>
+            <div class="color-hex">#ffafcc</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display light-text" style="background-color: #fff0f5;">Off White</div>
+        <div class="color-info">
+            <div class="color-name">Off White</div>
+            <div class="color-hex">#fff0f5</div>
+        </div>
+    </div>
+    <div class="color-card">
+        <div class="color-display" style="background-color: #610f33;">Dark Rose</div>
+        <div class="color-info">
+            <div class="color-name">Dark Rose</div>
+            <div class="color-hex">#610f33</div>
+        </div>
+    </div>
+</div>
             <!-- Amber Theme Palette -->
             <div class="color-palette amber-palette" style="display: none;">
                 <div class="color-card">
@@ -1022,52 +1178,64 @@
     </footer>
 
     <script>
-        const themeSelect = document.getElementById('themeSelect');
-        const themeIndicator = document.querySelector('.theme-indicator');
-        const standardPalette = document.querySelector('.standard-palette');
-        const purplePalette = document.querySelector('.purple-palette');
-        const tealPalette = document.querySelector('.teal-palette');
-        const crimsonPalette = document.querySelector('.crimson-palette');
-        const emeraldPalette = document.querySelector('.emerald-palette');
-        const amberPalette = document.querySelector('.amber-palette');
-        
-        themeSelect.addEventListener('change', function() {
-            const selectedTheme = this.value;
-            document.body.className = '';
-            
-            // Hide all palettes
-            standardPalette.style.display = 'none';
-            purplePalette.style.display = 'none';
-            tealPalette.style.display = 'none';
-            crimsonPalette.style.display = 'none';
-            emeraldPalette.style.display = 'none';
-            amberPalette.style.display = 'none';
-            
-            if (selectedTheme === 'purple') {
-                document.body.classList.add('purple-theme');
-                themeIndicator.textContent = 'Purple Elegance';
-                purplePalette.style.display = 'flex';
-            } else if (selectedTheme === 'teal') {
-                document.body.classList.add('teal-theme');
-                themeIndicator.textContent = 'Teal Prosperity';
-                tealPalette.style.display = 'flex';
-            } else if (selectedTheme === 'crimson') {
-                document.body.classList.add('crimson-theme');
-                themeIndicator.textContent = 'Crimson Power';
-                crimsonPalette.style.display = 'flex';
-            } else if (selectedTheme === 'emerald') {
-                document.body.classList.add('emerald-theme');
-                themeIndicator.textContent = 'Emerald Growth';
-                emeraldPalette.style.display = 'flex';
-            } else if (selectedTheme === 'amber') {
-                document.body.classList.add('amber-theme');
-                themeIndicator.textContent = 'Amber Wealth';
-                amberPalette.style.display = 'flex';
-            } else {
-                themeIndicator.textContent = 'Standard Gold/Navy';
-                standardPalette.style.display = 'flex';
-            }
-        });
+       const themeSelect = document.getElementById('themeSelect');
+const themeIndicator = document.querySelector('.theme-indicator');
+const standardPalette = document.querySelector('.standard-palette');
+const purplePalette = document.querySelector('.purple-palette');
+const tealPalette = document.querySelector('.teal-palette');
+const crimsonPalette = document.querySelector('.crimson-palette');
+const emeraldPalette = document.querySelector('.emerald-palette');
+const amberPalette = document.querySelector('.amber-palette');
+const sapphirePalette = document.querySelector('.sapphire-palette');
+const rosePalette = document.querySelector('.rose-palette');
+
+themeSelect.addEventListener('change', function() {
+    const selectedTheme = this.value;
+    document.body.className = '';
+    
+    // Hide all palettes
+    standardPalette.style.display = 'none';
+    purplePalette.style.display = 'none';
+    tealPalette.style.display = 'none';
+    crimsonPalette.style.display = 'none';
+    emeraldPalette.style.display = 'none';
+    amberPalette.style.display = 'none';
+    sapphirePalette.style.display = 'none';
+    rosePalette.style.display = 'none';
+    
+    if (selectedTheme === 'purple') {
+        document.body.classList.add('purple-theme');
+        themeIndicator.textContent = 'Purple Elegance';
+        purplePalette.style.display = 'flex';
+    } else if (selectedTheme === 'teal') {
+        document.body.classList.add('teal-theme');
+        themeIndicator.textContent = 'Teal Prosperity';
+        tealPalette.style.display = 'flex';
+    } else if (selectedTheme === 'crimson') {
+        document.body.classList.add('crimson-theme');
+        themeIndicator.textContent = 'Crimson Power';
+        crimsonPalette.style.display = 'flex';
+    } else if (selectedTheme === 'emerald') {
+        document.body.classList.add('emerald-theme');
+        themeIndicator.textContent = 'Emerald Growth';
+        emeraldPalette.style.display = 'flex';
+    } else if (selectedTheme === 'amber') {
+        document.body.classList.add('amber-theme');
+        themeIndicator.textContent = 'Amber Wealth';
+        amberPalette.style.display = 'flex';
+    } else if (selectedTheme === 'sapphire') {
+        document.body.classList.add('sapphire-theme');
+        themeIndicator.textContent = 'Sapphire Trust';
+        sapphirePalette.style.display = 'flex';
+    } else if (selectedTheme === 'rose') {
+        document.body.classList.add('rose-theme');
+        themeIndicator.textContent = 'Rose Passion';
+        rosePalette.style.display = 'flex';
+    } else {
+        themeIndicator.textContent = 'Standard Gold/Navy';
+        standardPalette.style.display = 'flex';
+    }
+});
     </script>
 </body>
 </html>
